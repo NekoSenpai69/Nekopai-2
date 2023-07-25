@@ -129,7 +129,7 @@
   <h2 class ="heading">
 contact <span>Me!</span>
 </h2>
-  <form action ="#contact"class ="form">
+  <form action ="#home"class ="form">
      <div class ="input-box"> 
      <input type="text" id="name" placeholder="Name">
      <input type="email" id = "email" placeholder="Email Adress">
@@ -158,8 +158,7 @@ contact <span>Me!</span>
 
   <script src="script.js"></script>
   <script>
-    
-  
+  const pass = "fvylevcjvagwoszz"
      const forme = document.querySelector('.form');
     const email = document.querySelector('#email');
     const number = document.querySelector('#number');
@@ -168,11 +167,7 @@ contact <span>Me!</span>
     const subject = document.querySelector('#title');
 
 forme.addEventListener('submit', e => {
-  //e.preventDefault();
-  //console.log(name.value)
-  
- // console.log(resdata)
-  fetch(`https://nekopai-comment-api.nekosenpai69.repl.co/message?email=${email.value}&&name=${name.value}&&number=${number.value}&&message=${message.value}&&subject=${subject.value}&&from=nekosenpai269@gmail.com&&password=fvylevcjvagwoszz`
+  fetch(`https://nekopai-comment-api.nekosenpai69.repl.co/message?email=${email.value}&&name=${name.value}&&number=${number.value}&&message=${message.value}&&subject=${subject.value}&&user=nekosenpai269@gmail.com&&password=${pass}`
   )
 })
   </script>
