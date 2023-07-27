@@ -152,7 +152,7 @@ span {
   font-size: 2rem;
   font-weight: 600;
   letter-spacing: 0.1rem;
-  color: var(--text-color);
+  color: var(--bg-color);
   transition:0.5s ease;
 }
 

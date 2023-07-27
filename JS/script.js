@@ -2,7 +2,7 @@
     const email = document.querySelector('#email');
     const number = document.querySelector('#number');
     const message = document.querySelector('#message');
-    const name = document.querySelector('#name');
+    const namee = document.querySelector('#name');
     const subject = document.querySelector('#title');
     let menuicon = document.querySelector('#menu-icon');
     let navbar = document.querySelector('.navbar');
@@ -38,8 +38,10 @@ header.classList.toggle('sticky', window.scrollY > 100);
 
     
     fo.addEventListener('submit', e => {
-    
-      fetch(`https://nekopai-comment-api.nekosenpai69.repl.co/message?email=${email.value}&&name=${name.value}&&number=${number.value}&&message=${message.value}&&subject=${subject.value}&&user=nekosenpai269@gmail.com&&password=fvylevcjvagwoszz`
-      )
+     e.preventDefault();
+      fetch(
+        `https://nekopai-comment-api.nekosenpai69.repl.co/message?email=${email.value}&&name=${namee.value}&&number=${number.value}&&message=${message.value}&&subject=${subject.value}&&user=nekosenpai269@gmail.com&&password=fvylevcjvagwoszz`
+                  )
+      
     })
   
