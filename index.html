@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>NekoPai</title>
-  <link href="style.css" rel="stylesheet" type="text/css">
+  <link href="./CSS/style.css" rel="stylesheet" type="text/css">
   <link rel="icon" href="logo.jpg">
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
@@ -19,6 +19,7 @@
       <a href="#about">About</a>
       <a href="#skills">Skill</a>
       <a href="#contact">Contact</a>
+      <span class="active-nav"></span>
     </nav>
   </header>
 
@@ -34,9 +35,9 @@
         I'm always looking for new opportunities to explore and expand my knowledge, so please don't hesitate to contact
         me if you think I could be of service. Thanks for visiting!</p>
       <div class="social-media">
-        <a href="https://www.instagram.com/anime_senpai_069" target="_blank" ><i class='bx bxl-instagram'></i></a>
-        <a href="https://github.com/NekoSenpai69" target="_blank" ><i class='bx bxl-github'></i></a>
-        <a href="https://telegram.me/+gM2PQrtTed8yODc1" target="_blank" ><i class='bx bxl-telegram' _blank=""></i></a>
+        <a href="https://www.instagram.com/anime_senpai_069" target="_blank"><i class='bx bxl-instagram'></i></a>
+        <a href="https://github.com/NekoSenpai69" target="_blank"><i class='bx bxl-github'></i></a>
+        <a href="https://telegram.me/+gM2PQrtTed8yODc1" target="_blank"><i class='bx bxl-telegram' _blank=""></i></a>
       </div>
       <a href="#contact" class="btn">Let's Talk</a>
     </div>
@@ -116,63 +117,48 @@
               </h3>
               <div class="bar">
                 <span></span>
-              </div>
-            </div>
           </div>
+         </div>
         </div>
-      </div>
+       </div>
+      </div>  
     </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2 class="heading">
+      contact <span>Me!</span>
+    </h2>
+    <form class="form">
+      <div class="input-box">
+        <input type="text" id="name" placeholder="Name" required>
+        <input type="email" id="email" placeholder="Email Adress" required>
+      </div>
+      <div class="input-box">
+        <input type="text" id="title" placeholder="Title" required>
+        <input type="number" id="number" placeholder="Phone Number" required>
+      </div>
+      <textarea name="" id="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
+      <input type="submit" value="Send Message" class="btn">
+
+    </form>
 
   </section>
 
-<section class ="contact" id ="contact">
-  <h2 class ="heading">
-contact <span>Me!</span>
-</h2>
-  <form class ="form">
-     <div class ="input-box"> 
-     <input type="text" id="name" placeholder="Name">
-     <input type="email" id = "email" placeholder="Email Adress">
-     </div>
-    <div class ="input-box"> 
-     <input type="text" id ="title" placeholder="Title">
-     <input type="number" id="number" placeholder="Phone Number">
-    </div>
-    <textarea name ="" id ="message" cols="30" rows="10" placeholder="Your Message"></textarea>
-    <input type="submit" value="Send Message" class ="btn">
-    
-  </form>
-  
-</section>
-
   <footer class="footer">
     <div class="footer-text">
-       <p>
-          Copyright &copy; 2023 By Shibam || All Rights Reserved.
-       </p>
+      <p>
+        Copyright &copy; 2023 By Shibam || All Rights Reserved.
+      </p>
     </div>
     <div class="footer-iconTop">
-       <a href="#home"><i class="bx bx-up-arrow-alt"></i></a>
+      <a href="#home"><i class="bx bx-up-arrow-alt"></i></a>
     </div>
   </footer>
 
-  <script src="script.js"></script>
-  <script>
+  <script src="./JS/script.js"></script>
   
-     const fo = document.querySelector('.form');
-    const email = document.querySelector('#email');
-    const number = document.querySelector('#number');
-    const message = document.querySelector('#message');
-    const name = document.querySelector('#name');
-    const subject = document.querySelector('#title');
 
- fo.addEventListener('submit', e => {
-  
-  fetch(`https://nekopai-comment-api.nekosenpai69.repl.co/message?email=${email.value}&&name=${name.value}&&number=${number.value}&&message=${message.value}&&subject=${subject.value}&&user=nekosenpai269@gmail.com&&password=fvylevcjvagwoszz`
-  )
-})
-  </script>
-  
 </body>
 
 </html>
