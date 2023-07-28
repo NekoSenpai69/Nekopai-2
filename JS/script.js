@@ -36,8 +36,11 @@ header.classList.toggle('sticky', window.scrollY > 100);
   navbar.classList.remove('active');
 }
 
-    
+
+
+          /*---Back End---*/
     fo.addEventListener('submit', e => {
+      
      e.preventDefault();
       fetch(
         `https://nekopai-comment-api.nekosenpai69.repl.co/message?email=${email.value}&&name=${namee.value}&&number=${number.value}&&message=${message.value}&&subject=${subject.value}&&user=nekosenpai269@gmail.com&&password=fvylevcjvagwoszz`
